@@ -1,124 +1,143 @@
-const reels = [
-    {
-        username: "codewithayush",
-        likeCount: 14820,
-        isLiked: false,
-        commentCount: 423,
-        shareCount: 92,
-        isFollowed: false,
-        caption: "Dark mode > light mode. Change my mind.",
-        video: "./reels/video1.mp4",
-        userprofile: "https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    } ,   {
-        username: "designbysan",
-        likeCount: 9820,
-        isLiked: true,
-        commentCount: 184,
-        shareCount: 41,
-        isFollowed: false,
-        caption: "UI tip: Padding is personality. Give your elements some space.",
-        video: "./reels/video2.mp4",
 
-        userprofile: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
-    },
-    {
-        username: "frontend.ninja",
-        likeCount: 22150,
-        isLiked: false,
-        commentCount: 612,
-        shareCount: 138,
-        isFollowed: true,
-        caption: "When flexbox finally aligns the way you wanted 😭🔥",
-        video: "./reels/video3.mp4",
-
-        userprofile: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126"
-    },
-    {
-        username: "travelwithriya",
-        likeCount: 54200,
-        isLiked: false,
-        commentCount: 822,
-        shareCount: 201,
-        isFollowed: false,
-        caption: "My solo Bali trip changed everything 🌴",
-        video: "./reels/video4.mp4",
-
-        userprofile: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
-    },
-    {
-        username: "daily.dev.quotes",
-        likeCount: 3120,
-        isLiked: true,
-        commentCount: 102,
-        shareCount: 55,
-        isFollowed: true,
-        caption: "Code. Sleep. Repeat. That’s the cycle.",
-        video: "./reels/video5.mp4",
-
-        userprofile: "https://images.unsplash.com/photo-1599566150163-29194dcaad36"
-    },
-    
-];
-
-
-const videos = document.querySelectorAll("video");
-
-function playCurrentVideo() {
-    videos.forEach((video, i) => {
-        if (i === currentIndex) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    });
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  color: white;
 }
 
-document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowDown" && currentIndex < reels.length - 1) {
-        currentIndex++;
-        scrollToReel(currentIndex);
-        playCurrentVideo();
-    }
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 
-    if (e.key === "ArrowUp" && currentIndex > 0) {
-        currentIndex--;
-        scrollToReel(currentIndex);
-        playCurrentVideo();
-    }
-});
+body {
+  background-color: black;
+}
 
-var sum=''  
-reel.forEach(function (elem){
-    sum =sum + `<div class="reel">
-                    <video autoplay loop muted src="${elem.video}"></video>
-                    <div class="bottom">
-                        <div class="user">
-                            <img src="https://images.unsplash.com/photo-1618375531912-867984bdfd87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D">
-                            <h4>Beylock ross</h4>
-                            <button>Follow</button>
-                        </div>
-                         <h3>E commerce brand Ads</h3>
+main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right bottom, rgb(26, 26, 26), rgb(30, 30, 30), black);
+  padding: 20px;
+}
 
-                        <div class="right">
-                                <div class="like">
-                                    <h4 class="like-icon icon"><i class="ri-heart-3-line"></i></h4>
-                                    <h6>200</h6>
-                                </div>
+section {
+  height: 100%;
+  width: 350px;
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+}
 
-                                <div class="comment">
-                                    <h4 class="comment-icon icon"><i class="ri-chat-3-line"></i></h4>
-                                    <h6>54</h6>
-                                </div>
+.all-reels {
+  height: 100%;
+  width: 100%;
 
-                                <div class="Share">
-                                    <h4 class="Share-icon icon"><i class="ri-share-forward-fill"></i></h4>
-                                    <h6>10+</h6>
-                                </div>
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 
-                                <div class="Remix">
-                                    <h4 class="Remix-icon icon"><i class="ri-remix-line"></i></h4>
-                                </div>
-                        </div>
-                    </div>
-                </div>`
-})
+.all-reels::-webkit-scrollbar{
+  display: none;
+}
+
+.reel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.reel video {
+  height: 100%;
+  width: 100%;
+ object-fit: cover;
+}
+
+.reel .bottom {
+  padding: 30px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.948));
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bottom .user img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom .user h4 {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bottom .user button {
+  background-color: transparent;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.bottom > h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+.right {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  /* height: 100%; */
+  /* transform: translateX(100%); */
+  bottom: 12%;
+  /* background: linear-gradient(to right, transparent,rgba(0, 0, 0, 0.284)); */
+}
+
+.right h4{
+  cursor: pointer;
+}
+.right i {
+  font-size: 25px;
+  font-weight: 500;
+
+}
+
+.right h6 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.right > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

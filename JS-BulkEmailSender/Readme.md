@@ -45,13 +45,6 @@ A simple and interactive **Email Sender Simulation Dashboard** built using **HTM
 * DOM Manipulation
 * Event Handling
 * Array methods (map, forEach)
-
----
-
-## 📸 Screenshots
-
-*Add your project screenshots here*
-
 ---
 
 

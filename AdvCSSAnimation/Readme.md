@@ -1,4 +1,6 @@
 ## Project Title: Advanced CSS Animation
+Deployed website successfuly using Vercel:
+🌐https://web-dev-rose-ten.vercel.app/
 
 -Made a project using Advanced CSS
 ## Terms involved:

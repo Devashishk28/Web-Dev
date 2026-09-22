@@ -3,7 +3,7 @@
 A modern and responsive branding webpage inspired by the luxury automotive brand **Pagani**. 
 This project showcases elegant design, smooth animations, and interactive elements using pure HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo :
+## 🚀 Live Demo :https://pagani-branding-page.vercel.app/
 
 ## 📸 Preview
 

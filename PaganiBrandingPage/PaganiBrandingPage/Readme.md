@@ -6,4 +6,4 @@ This project showcases elegant design, smooth animations, and interactive elemen
 ## 🚀 Live Demo :
 
 ## 📸 Preview
-<img width="1820" height="1038" alt="Screenshot From 2026-09-22 18-00-08" src="https://github.com/user-attachments/assets/5a68b27b-47ac-4c4a-9ae5-03b9eded3cf9" />
+<img width="406" height="887" alt="Screenshot From 2026-09-22 08-46-39" src="https://github.com/user-attachments/assets/5c8b8dba-1c8a-4964-8d7c-289c4c816e8d" />

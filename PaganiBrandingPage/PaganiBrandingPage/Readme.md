@@ -9,6 +9,9 @@ This project showcases elegant design, smooth animations, and interactive elemen
 
 <img width="1911" height="946" alt="Screenshot From 2026-09-22 18-32-53" src="https://github.com/user-attachments/assets/6fb36bbe-ed58-450c-897e-5ab65fa0e803" />
 
+[Screencast From 2026-10-01 23-03-09.webm](https://github.com/user-attachments/assets/b7718a0e-e3d2-4a91-b294-b86df0f0dd03)
+
+
 <img width="1911" height="946" alt="Screenshot From 2026-09-22 18-42-18" src="https://github.com/user-attachments/assets/e7dd1801-bc93-487c-96cf-cf6b80d479c2" />
 
 <img width="1911" height="946" alt="Screenshot From 2026-09-22 18-42-25" src="https://github.com/user-attachments/assets/c9c80f81-3a68-4790-b714-776b1242d455" />

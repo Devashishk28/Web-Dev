@@ -31,7 +31,6 @@ This project showcases elegant design, smooth animations, and interactive elemen
 - Modern UI/UX
 - Smooth Animations
 - Interactive Elements
-- Mobile-Friendly Layout
 - Optimized Performance
 
 ## 📖 About The Project

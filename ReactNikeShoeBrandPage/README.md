@@ -7,7 +7,7 @@ This project focuses on bold typography, clean layouts, reusable React component
 ---
 
 ## 📸 Preview
-Have a Look at my overall Project:
+Have a Look at my overall Project:https://react-nike-shoe-brand-page.vercel.app/
 
 
 [Screencast From 2026-10-01 23-53-04.webm](https://github.com/user-attachments/assets/5e1669b1-d1bd-40f2-a6d2-450e5418b67a)

@@ -1,0 +1,267 @@
+.links-app{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height:0;
+    overflow: hidden;
+    color:#f5f5f7;
+    background: #0b1018;
+font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.links-brand{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    margin-bottom: 30px;
+    
+}
+
+.brand-icon,
+.hero-symbol{
+    display: grid;
+    place-items: center;
+    background: #17283c;
+    color:#8bc4ff;
+    border-radius: 12px;
+    margin: 5px;
+
+}
+
+.brand-icon{
+    width:42px;
+    height: 42px;
+    font-size: 28px;
+    margin: 5px;
+
+}
+
+.links-brand h3,
+.links-brand p,
+.links-brand h1,
+.links-brand p{
+    margin:0;
+    
+}
+
+.links-brand h3{
+    font-size: 15px;
+    
+    
+}
+
+.links-brand p,
+.links-sidebar small{
+    color:#929cac;
+    font-size: 11px;
+    margin-top:5px;
+}
+
+.links-nav{
+    display: grid;
+    gap:8px;
+    margin: 5px;
+
+}
+
+.links-nav button{
+    border:0;
+    border-radius: 9px;
+    padding: 12px;
+    text-align: left;
+    color:#c4cbd5;
+    background:transparent;
+    cursor:pointer;
+}
+
+.links-nav button:hover,
+.links-nav button.active{
+    background: #182c44;
+    color: white;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  color: #9ca7b8;
+  font-size: 12px;
+    margin: 5px;
+
+}
+
+.sidebar-footer p {
+  margin-bottom: 5px;
+    margin: 5px;
+
+}
+
+.links-content {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 22px 26px 56px;
+  box-sizing: border-box;
+  background:
+    radial-gradient(ellipse at 80% 0%, #182a3d 0%, transparent 45%),
+    #0b1018;
+}
+
+.links-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.links-toolbar h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.links-toolbar input {
+  width: min(260px, 55%);
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid #293341;
+  outline: none;
+  background: #151c26;
+  color: white;
+}
+
+.links-toolbar input:focus {
+  border-color: #669bd7;
+}
+
+.links-hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.hero-symbol {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  font-size: 38px;
+}
+
+.links-hero h1 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.links-hero p {
+  font-size: 13px;
+  color: #adb8c8;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.link-card {
+  position: relative;
+  min-width: 0;
+  min-height: 140px;
+  padding: 18px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 15px;
+  background: rgba(22, 29, 39, 0.78);
+  color: #f5f5f7;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease,
+    border-color 180ms ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: #1a2737;
+  border-color: #49627f;
+}
+
+.link-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.link-icon.github { background: #252c36; }
+.link-icon.linkedin { background: #087dbb; }
+.link-icon.portfolio { background: #6839a5; }
+.link-icon.leetcode { background: #32291d; color: #ffb34d; }
+.link-icon.youtube { background: #e62117; }
+.link-icon.vercel { background: #000; }
+.link-icon.email { background: #0867db; }
+
+.link-arrow {
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  color: #a9b6c7;
+  font-size: 19px;
+}
+
+.link-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.link-card p {
+  margin: 0;
+  color: #aab4c3;
+  font-size: 12px;
+}
+
+.links-empty {
+  color: #aab4c3;
+  text-align: center;
+  padding: 25px;
+}
+
+.links-signature {
+  position: absolute;
+  right: 28px;
+  bottom: 15px;
+  color: #8b98a9;
+  font-size: 13px;
+  font-style: italic;
+}
+
+@media (max-width: 760px) {
+  .links-sidebar {
+    width: 145px;
+    padding: 16px 10px;
+  }
+
+  .links-content {
+    padding: 16px 12px 45px;
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .link-card {
+    padding: 12px;
+  }
+
+  .links-hero h1 {
+    font-size: 21px;
+  }
+
+  .links-hero p {
+    font-size: 11px;
+  }
+}
